@@ -1,19 +1,31 @@
 
 public class Main {
     public static void main(String[] args) {
+        Car car = new Car();
+        car.setModel("BMW M8");
+        car.setRangi("Black");
+        car.setNarxi(220000);
+        car.setAutomatic(true);
+        car.print();
 
-        Car car = new Car("black", "BMW M8", 220000, true);
-        System.out.println(car.toString());
-
+        Uchburchak uchburchak = new Uchburchak();
+        uchburchak.setSideA(5);
+        uchburchak.setSideB(6);
+        uchburchak.setSideC(6.5);
+        System.out.println(uchburchak.toString());
+        System.out.print("Perimetr: ");
+        System.out.print(uchburchak.perimetr());
         System.out.println();
 
-        TogriBurchakliUchburchak togriBurchakliUchburchak = new TogriBurchakliUchburchak(3, 4, 5);
-        System.out.println(togriBurchakliUchburchak.toString());
 
-        System.out.println();
+        Point point = new Point(1.0, 2.0, 3.0);
+        System.out.println(point);
 
-        Person person = new Person("Bahrom","Aslanov", 73, "Male");
-        System.out.println(person.toString());
+        point.setX(9.5);
+        point.setY(10.5);
+        point.setZ(11.5);
+        System.out.println(point);
+
 
 
 

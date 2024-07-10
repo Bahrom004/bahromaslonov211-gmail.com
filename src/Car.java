@@ -1,38 +1,62 @@
 public class Car {
-    private String color;
+    private String rangi;
     private String model;
-    private double price;
+    private double narxi;
     private boolean isAutomatic;
-    public Car(String color, String model, double price, boolean  isAutomatic){
-        this.color = color;
+
+    public Car() {
+    }
+
+    public Car(String rangi, String model, double narxi, boolean isAutomatic) {
+        this.rangi = rangi;
         this.model = model;
-        this.price = price;
+        this.narxi = narxi;
         this.isAutomatic = isAutomatic;
     }
 
-    public String getColor() {
-        return color;
+    public String getRangi() {
+        return rangi;
+    }
+
+    public void setRangi(String rangi) {
+        this.rangi = rangi;
     }
 
     public String getModel() {
         return model;
     }
 
-    public double getPrice() {
-        return price;
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public double getNarxi() {
+        return narxi;
+    }
+
+    public void setNarxi(double narxi) {
+        this.narxi = narxi;
     }
 
     public boolean isAutomatic() {
         return isAutomatic;
     }
 
-    @Override
-    public String toString() {
-        return "Car{" +
-                "color='" + color + '\'' +
-                ", model='" + model + '\'' +
-                ", price=" + price +
-                ", isAutomatic=" + isAutomatic +
-                '}';
+    public void setAutomatic(boolean automatic) {
+        isAutomatic = automatic;
     }
+
+    public void print(){
+        System.out.println("Car={model: "+model+";"+" rangi: "+rangi+";"+" narxi: "+narxi+";"+"isAutomatic: "+isAutomatic+" }");
+    }
+
+//    @java.lang.Override
+//    public java.lang.String toString() {
+//        return "Car{" +
+//                "rangi=" + rangi +
+//                ", model=" + model +
+//                ", narxi=" + narxi +
+//                ", isAutomatic=" + isAutomatic +
+//                '}';
+//    }
 }
